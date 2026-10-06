@@ -8,7 +8,6 @@ The design system incorporates the **exact 4-color palette**:
 - 🌊 **Dusty Teal (`#89C9C9`)**: Secondary cards, informational elements, charts, supporting UI.
 - 🍋 **Soft Lime / Mindaro (`#DAFC92`)**: Primary CTA highlights, "+ Add Employee", active indicators, positive statistics.
 
----
 
 ## 🚀 Quick Start
 
