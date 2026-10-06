@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-alabaster: #F2F7F9;
+    --color-dusty-teal: #89C9C9;
+    --color-soft-lime: #DAFC92;
+    --color-holly: #02261E;
+  }
+
+  body {
+    background-color: #F2F7F9;
+    color: #02261E;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F2F7F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CADBE2;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #89C9C9;
+}
+
+/* Subtle micro-animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(218, 252, 146, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(218, 252, 146, 0.7);
+  }
+}
+
+.animate-glow {
+  animation: pulseGlow 3s infinite;
+}
